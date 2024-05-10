@@ -224,7 +224,7 @@ prox_numero_conta = 1
 # Função para cadastrar uma nova conta bancária
 def cadastrar_conta_bancaria(usuario):
     global prox_numero_conta
-    conta = ContaCorrente(usuario, prox_numero_conta)  # Remova "agencia" daqui
+    conta = ContaCorrente(usuario, prox_numero_conta)
     usuario.adicionar_conta(conta)
     prox_numero_conta += 1
     print("Conta bancária cadastrada com sucesso.")
